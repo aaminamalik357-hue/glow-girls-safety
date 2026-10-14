@@ -24,7 +24,7 @@ const levels = [
         options: ["Using your name only", "A long, unique password", "Using 123456"],
         answer: 1
       }
-    ]
+    
   },
   {
     title: "Cyberbullying & Boundaries",
