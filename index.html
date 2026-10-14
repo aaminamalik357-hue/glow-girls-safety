@@ -1,0 +1,66 @@
+<DOCTYPE html>
+<html lang "en"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7138c8">
+  <title>GLOW | Girls' Safety & Well-being</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">✦ GLOW</div>
+    <p>Girls Learning Online Safety & Well-being</p>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <span class="sparkle">✦</span>
+      <h1>Your safety. Your power.</h1>
+      <p>Learn, practise and grow with confidence — online and in everyday life.</p>
+      <a class="primary" href="#levels">Start learning ↓</a>
+    </section>
+
+    <section class="stats">
+      <div><strong id="points">0</strong><span>Points</span></div>
+      <div><strong id="completed">0/4</strong><span>Levels passed</span></div>
+      <div><strong id="badges">0</strong><span>Badges earned</span></div>
+    </section>
+
+    <section id="levels">
+      <h2>🌷 Your learning journey</h2>
+      <p>Pass a quiz with at least 3 correct answers to unlock the next level.</p>
+      <div id="levelList"></div>
+    </section>
+
+    <section class="reminder">
+      <h2>💜 Remember</h2>
+      <p>You can say no, protect your personal information, and ask a trusted adult for help. You never have to handle an unsafe situation alone.</p>
+    </section>
+
+    <section>
+      <h2>🏅 Your badges</h2>
+      <div id="badgeShelf" class="badge-shelf">Complete a level to earn your first badge!</div>
+    </section>
+
+    <section class="help">
+      <h2>Need help?</h2>
+      <p>If you feel unsafe, move toward a safer public place and contact a trusted adult or local emergency service. This learning demo does not send SOS alerts or track your location.</p>
+    </section>
+  </main>
+
+  <footer>GLOW 💜 Learn safely. Live confidently.</footer>
+
+  <dialog id="quiz">
+    <div class="quiz-top">
+      <span id="quizLevel">Level 1</span>
+      <button id="closeQuiz" class="close" aria-label="Close quiz">×</button>
+    </div>
+    <div id="quizContent"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
