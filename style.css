@@ -1,0 +1,182 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #faf6ff;
+  color: #302044;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(120deg, #7138c8, #c45bdf);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+main {
+  width: 92%;
+  max-width: 850px;
+  margin: 24px auto;
+}
+
+section {
+  margin-bottom: 22px;
+}
+
+.welcome {
+  background: white;
+  padding: 28px 20px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 5px 20px #7138c820;
+}
+
+h1, h2 {
+  color: #7138c8;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+.primary, button {
+  display: inline-block;
+  background: #7138c8;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.stats div {
+  background: #efe3ff;
+  border-radius: 15px;
+  padding: 14px 5px;
+  text-align: center;
+}
+
+.stats strong, .stats span {
+  display: block;
+}
+
+.stats strong {
+  color: #7138c8;
+  font-size: 23px;
+}
+
+.stats span {
+  font-size: 12px;
+}
+
+.level-card {
+  background: white;
+  border: 1px solid #eadcfb;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 12px 0;
+}
+
+.level-card p {
+  color: #675675;
+}
+
+.level-card button:disabled {
+  background: #b9adc7;
+}
+
+.reminder, .help {
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.reminder {
+  background: #efe3ff;
+}
+
+.help {
+  background: #fff0f5;
+}
+
+.badge-shelf {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge-item {
+  background: white;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #eadcfb;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  color: #7138c8;
+}
+
+dialog {
+  width: 90%;
+  max-width: 480px;
+  max-height: 85vh;
+  overflow-y: auto;
+  border: none;
+  border-radius: 20px;
+  padding: 22px;
+}
+
+dialog::backdrop {
+  background: #21132d99;
+}
+
+.quiz-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  text-align: left;
+  background: #efe3ff;
+  color: #302044;
+}
+
+.option.selected {
+  background: #7138c8;
+  color: white;
+}
+
+@media (max-width: 420px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .stats strong {
+    font-size: 19px;
+  }
+}
